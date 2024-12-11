@@ -7,8 +7,8 @@ database:
   password: "pass"
 # Chain network configuration
 chain:
-  configPath: ./config/mainnet.chain.yml
-  genesisTimestamp: 1639659600
+  configPath: ./config/่jibchain.chain.yml
+  genesisTimestamp: 1701158251
 # Note: It is possible to run either the frontend or the indexer or both at the same time
 # Frontend config
 frontend:
