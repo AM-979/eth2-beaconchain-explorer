@@ -1,0 +1,42 @@
+# Jibchain config
+
+# Extends the base mainnet config or any preset you may have
+PRESET_BASE: "mainnet"
+
+# Network name for Jibchain
+CONFIG_NAME: "jibchain"
+
+# Transition values for Jibchain, youอาจใช้ค่าต่างๆ จาก Genesis block
+TERMINAL_TOTAL_DIFFICULTY: 115792089237316195423570985008687907853269984665640564039457584007913129638912 # Placeholder for Jibchain's value
+TERMINAL_BLOCK_HASH: 0x0000000000000000000000000000000000000000000000000000000000000000
+TERMINAL_BLOCK_HASH_ACTIVATION_EPOCH: 18446744073709551615
+
+# Genesis block configuration for Jibchain
+MIN_GENESIS_ACTIVE_VALIDATOR_COUNT: 16384
+MIN_GENESIS_TIME: 1606824000 # Should be modified to the appropriate Jibchain time
+GENESIS_FORK_VERSION: 0x00000000
+GENESIS_DELAY: 604800 # Modify based on Jibchain's needs
+
+# Fork versions for Jibchain (you can adjust these according to Jibchain's fork schedule)
+ALTAIR_FORK_VERSION: 0x01000000
+ALTAIR_FORK_EPOCH: 74240
+BELLATRIX_FORK_VERSION: 0x02000000
+BELLATRIX_FORK_EPOCH: 144896
+CAPELLA_FORK_VERSION: 0x03000000
+CAPELLA_FORK_EPOCH: 194048
+
+# Time parameters (adjust to Jibchain network speeds and time)
+SECONDS_PER_SLOT: 12
+SECONDS_PER_ETH1_BLOCK: 14
+MIN_VALIDATOR_WITHDRAWABILITY_DELAY: 256
+SHARD_COMMITTEE_PERIOD: 256
+ETH1_FOLLOW_DISTANCE: 2048
+
+# Reward and penalty quotients (customize based on Jibchain network)
+INACTIVITY_PENALTY_QUOTIENT: 67108864
+MIN_SLASHING_PENALTY_QUOTIENT: 128
+PROPORTIONAL_SLASHING_MULTIPLIER: 1
+
+# Sync committee configuration for Jibchain
+SYNC_COMMITTEE_SIZE: 512
+EPOCHS_PER_SYNC_COMMITTEE_PERIOD: 256
